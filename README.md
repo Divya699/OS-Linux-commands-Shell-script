@@ -21,14 +21,22 @@ Execute the following commands
 Testing the commands for the desired output. 
 
 # COMMANDS:
+<<<<<<< HEAD
 ### Create the following files file1, file2 as follows:
+=======
+```
+>>>>>>> 3b8de58 (my commit)
 cat > file1
 ```
 chanchal singhvi
 c.k. shukla
 s.n. dasgupta
 sumit chakrobarty
+<<<<<<< HEAD
 ^d
+=======
+```
+>>>>>>> 3b8de58 (my commit)
 ```
 cat > file2
 ```
@@ -37,6 +45,7 @@ barun sengupta
 c.k. shukla
 lalit chowdury
 s.n. dasgupta
+<<<<<<< HEAD
 ^d
 ```
 ### Display the content of the files
@@ -50,6 +59,10 @@ cat < file2
 
 
 # Comparing Files
+=======
+ ```
+#Comparing Files
+>>>>>>> 3b8de58 (my commit)
 cmp file1 file2
 <<<<<<< HEAD
 ## OUTPUT
