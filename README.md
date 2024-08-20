@@ -34,12 +34,7 @@ s.n. dasgupta
 sumit chakrobarty
 <<<<<<< HEAD
 ^d
-=======
-```
->>>>>>> 3b8de58 (my commit)
-```
-cat > file2
-```
+k```
 anil aggarwal
 barun sengupta
 c.k. shukla
@@ -61,8 +56,12 @@ cat < file2
 # Comparing Files
 =======
  ```
+<<<<<<< HEAD
 #Comparing Files
 >>>>>>> 3b8de58 (my commit)
+=======
+# Comparing Files
+>>>>>>> 0ad9c75 (my commit)
 cmp file1 file2
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -71,8 +70,12 @@ cmp file1 file2
 =======
 =======
 
+<<<<<<< HEAD
 >>>>>>> 8640f69 (my commit)
 ##OUTPUT
+=======
+## OUTPUT
+>>>>>>> 0ad9c75 (my commit)
  ![cmpop](./op-img/cmp-op.png)
 >>>>>>> c070eac (my commit)
 comm file1 file2
