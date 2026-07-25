@@ -41,6 +41,7 @@ c.k. shukla
 lalit chowdury
 s.n. dasgupta
 <<<<<<< HEAD
+<<<<<<< HEAD
 ^d
 ```
 ### Display the content of the files
@@ -78,13 +79,34 @@ cmp file1 file2
 >>>>>>> 0ad9c75 (my commit)
  ![cmpop](./op-img/cmp-op.png)
 >>>>>>> c070eac (my commit)
+=======
+ ```
+
+ cat < file1
+ # OUTPUT
+
+![Alt text](<op-img/cat file1 output.png>)
+
+ cat < file2
+ # OUTPUT
+
+![Alt text](<op-img/cat file2 output.png>)
+
+# Comparing Files
+cmp file1 file2
+## OUTPUT
+![Alt text](<op-img/cmp file.png>)
+ 
+>>>>>>> d80834b (diffcommand)
 comm file1 file2
  ## OUTPUT
-
+![Alt text](<op-img/comm file.png>)
  
 diff file1 file2
 ## OUTPUT
 
+![Alt text](<op-img/diff file .png>)
+>>>>>>> d80834b (diffcommand)
 
 #Filters
 
