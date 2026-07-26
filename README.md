@@ -177,59 +177,59 @@ egrep -w 'Hello|hello' newfile
 
 ## OUTPUT
 
-
+![Alt text](img/file31.png)
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
-
+![Alt text](img/file32.png)
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
 
-
+![Alt text](img/file33.png)
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
-
+![Alt text](img/file34.png)
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
-
+![Alt text](img/file35.png)
 
 egrep '(World$)' newfile 
 ## OUTPUT
 
-
+![Alt text](img/file36.png)
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
-
+![Alt text](img/file37.png)
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
-
+![Alt text](img/file38.png)
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![Alt text](img/file39.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
 
-
+![Alt text](img/file40.png)
 egrep l{2} newfile
 ## OUTPUT
 
-
+![Alt text](img/file41.png)
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![Alt text](img/file42.png)
 
 cat > file23
 ```
@@ -243,49 +243,48 @@ cat > file23
 1001 | Ram | 10000 | HR
 ^d
 ```
-
-
+## OUTPUT
+![Alt text](img/file43.png)
 sed -n -e '3p' file23
 ## OUTPUT
 
-
+![Alt text](img/file44.png)
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![Alt text](img/file46.png)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-
+![Alt text](img/file47.png)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
-
+![Alt text](img/file48.png)
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-
+![Alt text](img/file49.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-
+![Alt text](img/file50.png)
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
 
-
+![Alt text](img/file51.png)
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-
-
+![Alt text](img/file52.png)
 seq 10 
 ## OUTPUT
 
