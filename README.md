@@ -109,43 +109,47 @@ hello world
 cat > newfile 
 Hello world
 hello world
+
+## OUTPUT
+![Alt text](img/file21.png)
  
 grep Hello newfile 
+
 ## OUTPUT
 
-
+![Alt text](img/file22.png)
 
 grep hello newfile 
 ## OUTPUT
 
-
+![Alt text](img/file23.png)
 
 
 grep -v hello newfile 
 ## OUTPUT
 
-
+![Alt text](img/file25.png)
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
 
-
+![Alt text](img/file266.png)
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
+![Alt text](img/file26.png)
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
-
+![Alt text](img/file27.png)
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![Alt text](img/file28.png)
 
 cat < newfile 
 ```
@@ -166,7 +170,11 @@ Unix is predecessor
 Linux is best in this World
 ^d
  ```
+ ## OUTPUT
+ ![Alt text](img/file29.png)
+
 egrep -w 'Hello|hello' newfile 
+
 ## OUTPUT
 
 
