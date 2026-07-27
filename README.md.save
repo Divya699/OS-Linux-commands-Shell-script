@@ -51,15 +51,15 @@ cat < file2
 
 # Comparing Files
 cmp file1 file2
-<<<<<<< HEAD
+
 ## OUTPUT
- 
-=======
-##OUTPUT
+
  ![cmpop](./op-img/cmp-op.png)
->>>>>>> c070eac (my commit)
+
 comm file1 file2
+
  ## OUTPUT
+
 
  
 diff file1 file2
