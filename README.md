@@ -65,9 +65,13 @@ cat < file2
 >>>>>>> 3b8de58 (my commit)
 cmp file1 file2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## OUTPUT
  
 =======
+=======
+
+>>>>>>> 8640f69 (my commit)
 ##OUTPUT
  ![cmpop](./op-img/cmp-op.png)
 >>>>>>> c070eac (my commit)
