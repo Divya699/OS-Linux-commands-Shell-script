@@ -285,6 +285,7 @@ sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
 ![Alt text](img/file52.png)
+
 seq 10 
 ## OUTPUT
 
