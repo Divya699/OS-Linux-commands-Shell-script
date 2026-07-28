@@ -1001,7 +1001,7 @@ $ chmod 755 exread1.sh
 
 ## OUTPUT
 
-
+![Alt text](shell33.png)
 
 $ ./exread1.sh 
  
