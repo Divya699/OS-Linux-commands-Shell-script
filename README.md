@@ -396,7 +396,10 @@ tar -tvf backup.tar
 
 ![Alt text](filea4.png)
 ![Alt text](filea5.png)
+<<<<<<< HEAD
 
+=======
+>>>>>>> ecc24a1907aea521a9b94046827033ca417c4a51
 tar -xvf backup.tar
 
 ## OUTPUT
@@ -407,8 +410,12 @@ gzip backup.tar
 
 ls .gz
 ## OUTPUT
+<<<<<<< HEAD
 ![Alt text](filea8.png)
 
+=======
+ ![Alt text](filea8.png)
+>>>>>>> ecc24a1907aea521a9b94046827033ca417c4a51
 gunzip backup.tar.gz
 
 ## OUTPUT
