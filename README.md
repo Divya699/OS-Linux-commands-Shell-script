@@ -299,6 +299,7 @@ seq 10 | sed -n '4,6p'
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
+
 ![Alt text](../img/file63.png)
 
 seq 3 | sed '2a hello'
@@ -316,13 +317,12 @@ seq 10 | sed '2,9c hello'
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
 ![Alt text](../img/file67.png)
 
 sed -n '2,4{s/$/*/;p}' file23
 ## OUTPUT
-![Alt text](../img/file68.png)
 
+![Alt text](../img/file68.png)
 #Sorting File content
 cat > file21
 ```
@@ -346,7 +346,7 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-![Alt text](../img/file70.png)
+!![Alt text](../img/file70.png)
 
 
 #Using tr command
@@ -372,18 +372,18 @@ www. mrcet.... com
 
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
 ![Alt text](../img/file74.png)
- 
+
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-![Alt text](../img/filea1.png)
 
+![Alt text](../img/filea1.png)
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+![Alt text](filea2.png)
+![Alt text](filea3.png)
 
 mkdir backupdir
  
@@ -394,18 +394,20 @@ cd backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
-
+![Alt text](filea4.png)
+![Alt text](../filea5.png)
 tar -xvf backup.tar
 ## OUTPUT
-
+![Alt text](filea6.png)
+![Alt text](filea7.png)
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ![Alt text](../filea8.png)
 gunzip backup.tar.gz
 ## OUTPUT
-
+![Alt text](filea10.png)
  
 # Shell Script
 ```
