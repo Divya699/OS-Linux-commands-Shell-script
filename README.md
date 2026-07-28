@@ -289,7 +289,7 @@ sed -n -e '/tom/,/Joe/p' file23
 seq 10 
 ## OUTPUT
 
-
+..........
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
