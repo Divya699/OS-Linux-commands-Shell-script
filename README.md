@@ -289,40 +289,40 @@ sed -n -e '/tom/,/Joe/p' file23
 seq 10 
 ## OUTPUT
 
-![Alt text](../img/file61.png)
+![Alt text](img/file61.png)
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
-![Alt text](../img/file62.png)
+![Alt text](img/file62.png)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
 
-![Alt text](../img/file63.png)
+![Alt text](img/file63.png)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-![Alt text](../img/FILE64.png)
+![Alt text](img/FILE64.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-![Alt text](../img/FILE65.png)
+![Alt text](img/FILE65.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-![Alt text](../img/file66.png)
+![Alt text](img/file66.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-![Alt text](../img/file67.png)
+![Alt text](img/file67.png)
 
 sed -n '2,4{s/$/*/;p}' file23
 ## OUTPUT
 
-![Alt text](../img/file68.png)
+![Alt text](img/file68.png)
 #Sorting File content
 cat > file21
 ```
@@ -334,7 +334,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-![Alt text](../img/new.png)
+![Alt text](img/new.png)
 cat > file22
 ```
 1001 | Ram | 10000 | HR
@@ -346,14 +346,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-!![Alt text](../img/file70.png)
+![Alt text](img/file70.png)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-![Alt text](../img/file71.png)
+![Alt text](img/file71.png)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -368,16 +368,16 @@ www. google. com
 www. mrcet.... com
  ```
 ##OUTPUT
-![Alt text](../img/file73.png)
+![Alt text](img/file73.png)
 
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-![Alt text](../img/file74.png)
+![Alt text](img/file74.png)
 
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
-![Alt text](../img/filea1.png)
+![Alt text](img/filea1.png)
 
 #Backup commands
 tar -cvf backup.tar *
@@ -395,17 +395,22 @@ tar -tvf backup.tar
 ## OUTPUT
 
 ![Alt text](filea4.png)
-![Alt text](../filea5.png)
+![Alt text](filea5.png)
+
 tar -xvf backup.tar
+
 ## OUTPUT
 ![Alt text](filea6.png)
 ![Alt text](filea7.png)
+
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- ![Alt text](../filea8.png)
+![Alt text](filea8.png)
+
 gunzip backup.tar.gz
+
 ## OUTPUT
 ![Alt text](filea10.png)
  
@@ -417,7 +422,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![Alt text](shell1.png)
  
 cat << stop > herecheck.txt
 ```
@@ -430,7 +435,7 @@ stop
 cat herecheck.txt
 ## OUTPUT
 
-
+![Alt text](shell2.png)
 cat < scriptest.sh 
 ```bash
 \#!/bin/sh
@@ -468,24 +473,26 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
- 
+ ![Alt text](shell3.png)
+![Alt text](shell4.png)
 ls file1
 ## OUTPUT
-
+![Alt text](neww3.png)
 echo $?
 ## OUTPUT 
+![Alt text](shell6.png)
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+![Alt text](shell7.png)
 abcd
  
 echo $?
  ## OUTPUT
 
-
+![Alt text](neww1.png)
  
 # mis-using string comparisons
 
@@ -516,14 +523,14 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
+![Alt text](neww.png)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![Alt text](shell10.png)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -548,9 +555,10 @@ else
 echo “Sorry, you are not the owner of the /etc/passwd file”
 fi
  ```
+ 
 ./psswdperm.sh
 ## OUTPUT
-
+![Alt text](shell11.png)
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -596,7 +604,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
+![Alt text](shell12.png)
 
 
 # using numeric test comparisons
@@ -640,6 +648,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![Alt text](neww4.png)
 
 # check if a file
 cat > ifnested.sh 
@@ -689,7 +698,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-
+![Alt text](shell12.png)
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -717,7 +726,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![Alt text](shell15.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -733,7 +742,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![Alt text](shell16.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -752,7 +761,9 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+ ## OUTPUT
+ ![Alt text](shell17.png)
+ ![Alt text](shell18.png)
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -768,7 +779,7 @@ $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
  
- 
+ ![Alt text](shell19.png)
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -781,7 +792,8 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- 
+ ## OUTPUT
+ ![Alt text](shell20.png)
  
 cat forin1.sh 
 ```bash
@@ -794,7 +806,8 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
+ ![Alt text](shell24.png)
+ ![Alt text](shell25.png)
  
 cat forin2.sh 
 ```bash
@@ -820,6 +833,8 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
+## OUTPUT
+![Alt text](shell22.png)
  
 cat forin3.sh 
 ```bash
@@ -831,7 +846,9 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+## OUTPUT
+
+ ![Alt text](shell23.png)
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -844,6 +861,7 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -866,7 +884,8 @@ Khammam
 
 ## OUTPUT
 
-
+![Alt text](shell24.png)
+![Alt text](shell25.png)
 cat forctype.sh 
 ```bash
 #!/bin/bash
@@ -879,7 +898,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-
+![Alt text](shell27.png)
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -892,7 +911,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-
+![Alt text](shell29.png)
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -911,7 +930,8 @@ $ chmod 755 fornested1.sh
 $ ./fornested1.sh 
  ## OUTPUT
 
- 
+ ![Alt text](shell30.png)
+
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -932,6 +952,8 @@ $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
  
+![Alt text](shell31o.png)
+
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -952,7 +974,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![Alt text](shell32.png)
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -966,7 +988,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![Alt text](shell33.png)
 
  cat exread1.sh
 ```bash
@@ -1004,7 +1026,7 @@ fi
  
  ./funcex.sh 1 2
 
- 
+ ![Alt text](shell34.png)
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1017,7 +1039,7 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ![Alt text](shell37.png)
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1034,7 +1056,7 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ![Alt text](shell36.png)
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1047,7 +1069,7 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- 
+ ![Alt text](shell37.png)
  
 cat > nc.awk
 ```bash
@@ -1078,7 +1100,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![Alt text](shell40.png)
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1106,7 +1128,7 @@ fi
 ```
 ## OUTPUT 
 
-
+![Alt text](shell41.png)
 # RESULT:
 The Commands are executed successfully.
 
