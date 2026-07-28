@@ -346,7 +346,7 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-!![Alt text](img/file70.png)
+![Alt text](img/file70.png)
 
 
 #Using tr command
