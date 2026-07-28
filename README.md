@@ -289,38 +289,39 @@ sed -n -e '/tom/,/Joe/p' file23
 seq 10 
 ## OUTPUT
 
-..........
+![Alt text](../img/file61.png)
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
-
+![Alt text](../img/file62.png)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
-
+![Alt text](../img/file63.png)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-
+![Alt text](../img/FILE64.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![Alt text](../img/FILE65.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![Alt text](../img/file66.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-
+![Alt text](../img/file67.png)
 
 sed -n '2,4{s/$/*/;p}' file23
-
+## OUTPUT
+![Alt text](../img/file68.png)
 
 #Sorting File content
 cat > file21
@@ -333,8 +334,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
-
+![Alt text](../img/new.png)
 cat > file22
 ```
 1001 | Ram | 10000 | HR
@@ -346,14 +346,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![Alt text](../img/file70.png)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
+![Alt text](../img/file71.png)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -367,14 +367,17 @@ www. yahoo. com
 www. google. com
 www. mrcet.... com
  ```
+##OUTPUT
+![Alt text](../img/file73.png)
+
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
-
+![Alt text](../img/file74.png)
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-
+![Alt text](../img/filea1.png)
 
 
 #Backup commands
